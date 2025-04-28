@@ -1,0 +1,38 @@
+{
+    "name": "CloudMusic",
+    "description": "cloudmusic",
+    "version": "0.1.0",
+    "origin": "app://cloudmusic.cgluWxh.fun",
+    "launch_path": "/index.html",
+    "icons": {
+        "128": "/icon.png"
+    },
+    "developer": {
+        "name": "cgluWxh",
+        "url": "http://phitogether.fun"
+    },
+    "fullscreen": false,
+    "background_color": "light",
+    "type": "privileged",
+    "priority": "high",
+    "permissions": {
+        "desktop-notification": {
+            "description": "Required for displaying alerts when app is on background"
+        },
+        "systemXHR": {},
+        "audio-channel-content": {},
+        "audio-channel-normal": {},
+        "device-storage:music": {
+            "access": "readwrite"
+        },
+        "device-storage:sdcard": {
+            "access": "readwrite"
+        }
+    },
+    "messages": [
+        {
+            "serviceworker-notification": "/index.html"
+        }
+    ],
+    "ime_default_softkey_bar": "true"
+}
